@@ -1,6 +1,12 @@
 # TicTacToe-Java
 Just a re-creation of my horrible [python TicTacToe Game](https://github.com/DuskyElf/TicTacToe-py) which I made few months ago, but in java. It's my first program in java so nothing special in it.
 
+## Quick Start
+```shell
+$ git clone git@github.com:DuskyElf/TicTacToe-java.git
+$ cd TicTacToe-java
+```
+
 ## Getting Started with VS code Java
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
