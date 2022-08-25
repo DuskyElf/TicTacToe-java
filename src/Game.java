@@ -33,6 +33,7 @@ public class Game {
             System.out.println(board.display());
 
             winner = winCheck();
+            drawCheckEnd();
             if (winner != Board.Cell.N)
                 winAnnounce();
         }
@@ -101,6 +102,18 @@ public class Game {
             return b[2][0];
         
         return Board.Cell.N;
+    }
+
+    // Checking if the game drawed, if so ending it
+    void drawCheckEnd() {
+        if (winner != Board.Cell.N) return;
+
+        for (Board.Cell[] row: board.boardState)
+            for (Board.Cell cell: row)
+                if (cell == Board.Cell.N) return;
+        
+        System.out.println("It's a draw, Bruh!!");
+        running = false;
     }
 
     // Announcment that someone won, and killing the gameloop
