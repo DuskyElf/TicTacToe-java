@@ -97,7 +97,7 @@ public class Game {
         if (b[0][0] == b[1][1] & b[1][1] == b[2][2])
             return b[0][0];
 
-        if (b[0][0] != Board.Cell.N)
+        if (b[2][0] != Board.Cell.N)
         if (b[2][0] == b[1][1] & b[1][1] == b[0][2])
             return b[2][0];
         
